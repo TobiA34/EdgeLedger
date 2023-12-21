@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utilities.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    <title>Post One</title>
+</head>
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><i class="fa-solid fa-book-open"></i></span>Edge</span> Ledger
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Blog</a></li>
+                    <li><a href="index.html#blog">Cases</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+    <main>
+    <section class="post">
+        <h2>Blog post one</h2>
+         <p class="meta">
+                            <i class="fas fa-user"></i> Posted by  <strong>John Done</strong> | June 14 2023
+                        </p>
+                        <img src="img/blog/blog1.jpg" alt="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia illo eos soluta sequi modi blanditiis nihil illum, eum libero dolor neque asperiores tenetur laboriosam! Temporibus quo, aliquam quia omnis doloribus commodi quaerat nulla repudiandae praesentium rem quae est quod quasi corrupti ad mollitia soluta possimus, aperiam magni qui autem officia. Facere asperiores odio placeat tenetur praesentium obcaecati iste tempora qui.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vero repellendus quo. Aliquam excepturi, vel aliquid mollitia placeat, totam neque voluptatum incidunt, fugiat suscipit cumque enim pariatur quisquam deserunt voluptates fugit accusantium nemo perspiciatis ipsum iure? Deserunt, distinctio labore tempora, dicta, dignissimos officia aut nemo nulla nobis cum sapiente commodi!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, saepe accusantium. Natus esse reprehenderit sed nobis minus quibusdam quo optio cupiditate sit asperiores? Maiores ipsam voluptates atque reprehenderit officia qui vero saepe possimus neque odio delectus tempora aspernatur nemo sunt dicta, quas necessitatibus ipsum quod rem quo exercitationem in! Aperiam.</p>
+    </section>
+    </main>
+       
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+
+
+        </div>
+        <p>Copyright &copy; 2023  EdgeLedger</p>
+    </footer>
+    <script>
+        const navBar = document.getElementById('navbar');
+        let scrolled = false;
+        window.onscroll = function() {
+            if(window.pageYOffset > 100) {
+                navBar.classList.remove('top');
+                if(!scrolled) {
+                    navBar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(() => {
+                    navBar.style.transform = 'translateY(0)';
+                    scrolled=true
+
+                }, 200);
+            } else {
+            navBar.classList.add('top');
+            scrolled = false;
+            }
+        }
+    </script>
+<script src="https://kit.fontawesome.com/84e8532b49.js" crossorigin="anonymous"></script>
+</body>
+</html>
