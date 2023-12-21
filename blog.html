@@ -101,26 +101,7 @@
         </div>
         <p>Copyright &copy; 2023  EdgeLedger</p>
     </footer>
-    <script>
-        const navBar = document.getElementById('navbar');
- let scrolled = false;
- window.onscroll = function() {
-    if(window.pageYOffset > 100) {
-        navBar.classList.remove('top');
-        if(!scrolled) {
-            navBar.style.transform = 'translateY(-70px)';
-        }
-        setTimeout(() => {
-            navBar.style.transform = 'translateY(0)';
-            scrolled=true
-
-        }, 200);
-    } else {
-       navBar.classList.add('top');
-       scrolled = false;
-    }
- }
-    </script>
+    <script src="./js/main.js"></script>
 <script src="https://kit.fontawesome.com/84e8532b49.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -192,7 +192,7 @@
                 <div class="column">
                     <div class="column-2 bg-light">
                         <h2>Request Callback</h2>
-                         <form action="" class="callback-form">
+                         <form action=""  name="myForm" class="callback-form">
                             <div class="form-control">
                                 <label for="name"></label>
                                 <input type="text" id="name" name="name" placeholder="Enter Name">
@@ -203,9 +203,8 @@
                             </div>
                                <div class="form-control">
                                 <label for="phone"></label>
-                                <input type="text" id="phone" name="phone" placeholder="Enter Phone">
-                            </div>
-                            <input type="submit" value="send" class="btn">
+                                <textarea  id="message"  placeholder="Enter Message"></textarea>
+                             <button id="send-btn" onclick ="SendMail()" class="btn">Send</button>
                          </form>
                     </div>
                 </div>
@@ -224,43 +223,21 @@
         </div>
         <p>Copyright &copy; 2023  EdgeLedger</p>
     </footer>
-    <script
+     <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+   
   <script src="js/lightbox.min.js"></script>
 <script src="https://kit.fontawesome.com/84e8532b49.js" crossorigin="anonymous"></script>
-<script>
- const navBar = document.getElementById('navbar');
- let scrolled = false;
- window.onscroll = function() {
-    if(window.pageYOffset > 100) {
-        navBar.classList.remove('top');
-        if(!scrolled) {
-            navBar.style.transform = 'translateY(-70px)';
-        }
-        setTimeout(() => {
-            navBar.style.transform = 'translateY(0)';
-            scrolled=true
-
-        }, 200);
-    } else {
-       navBar.classList.add('top');
-       scrolled = false;
-    }
- }
- $('#navbar a, .btn').on('click',function(e){
-    if (this.hash !== '') {
-        e.preventDefault();
-        const hash = this.hash;
-
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top - 100,
-        },
-        800
-        );
-    }
- })
-  </script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+//    (function(){
+//       emailjs.init("9VCG56vcY2byZ2JqC");
+//    })();
+</script>
 </body>
 </html>
