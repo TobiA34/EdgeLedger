@@ -34,7 +34,7 @@ p {
 img {
     width: 100%;
 }
-
+ 
 /* Navbar */
 .navbar {
     display: flex;
@@ -168,11 +168,19 @@ img {
     border: #f5f5f5 1px solid;
 }
 
+.callback-form textarea {
+    width: 100%;
+    padding: 4px;
+    height: 200px;
+    border: #f5f5f5 1px solid;
+}
+
 .callback-form input:focus {
     outline-color: #28a745;
 }
 
 .callback-form .btn {
+    width: 100%;
     padding: 12px 0;
     margin-top: 20px;
 }
